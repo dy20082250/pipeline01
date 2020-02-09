@@ -8,7 +8,7 @@ pipeline{
             }
         }
 	stage('build'){
-	    steps{
+	    step{
 		sh "ifconfig ens33"
 	   }
 	}	
