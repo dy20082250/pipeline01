@@ -4,7 +4,7 @@ pipeline{
         stage('checkout code'){
             steps{
                 sh 'echo "checkout code"'a
-		git clone git@github.com:dy20082250/pipeline01.git
+		git  url:'git@github.com:dy20082250/pipeline01.git'
             }
         }
 	stage('build'){
