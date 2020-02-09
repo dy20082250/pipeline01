@@ -10,8 +10,10 @@ pipeline{
 	stage('build'){
 	    steps{
 		sh 'free -m'
-		sh 'ifconfig ens33'
+		sh 'ansible --verison'
+		sh 'ansible-playbook --version'
 	   }
+
 
 	}	
     }
