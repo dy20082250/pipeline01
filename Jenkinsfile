@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage('checkout code'){
             steps{
-                sh 'echo "checkout code"'a
+                sh 'echo "checkout code"'
 		git  url:'git@github.com:dy20082250/pipeline01.git'
             }
         }
 	stage('build'){
-	    step{
+	    steps{
 		sh "ifconfig ens33"
 	   }
 	}	
