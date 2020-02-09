@@ -9,8 +9,10 @@ pipeline{
         }
 	stage('build'){
 	    steps{
-		sh "ifconfig ens33"
+		sh 'free -m'
+		sh 'ifconfig ens33'
 	   }
+
 	}	
     }
 }
