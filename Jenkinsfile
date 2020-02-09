@@ -10,7 +10,7 @@ pipeline{
 	stage('build'){
 	    steps{
 		sh 'free -m'
-		sh 'ansible --verison'
+		sh 'ansible --version'
 		sh 'ansible-playbook --version'
 	   }
 
