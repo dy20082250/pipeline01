@@ -7,6 +7,7 @@ pipeline{
 		}
 		steps {
 		   echo "deploy to test env"
+		   echo "this is master branch and need to test"
 		}
         }
 	stage('deploy to prod'){
