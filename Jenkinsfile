@@ -1,17 +1,20 @@
 pipeline{
  agent any  //没有指定agent
     stages{
-        stage('checkout code'){
-            steps{
-                sh 'echo "checkout code"'
-            }
+        stage('deploy to test'){
+		when {
+		    branch 'master'
+		}
+		steps {
+		   echo "deploy to test env"
+		}
         }
-	stage('build'){
+	stage('deploy to prod'){
+		when {
+		    branch 'release'
+		}
 	    steps{
-		sh 'echo test2'
-		sh 'free -m'
-		sh 'ansible --version'
-		sh 'ansible-playbook --version'
+		  echo "deploy to prod env"
 	   }
 
 
