@@ -8,7 +8,7 @@ pipeline{
         }
 	stage('build'){
 	    steps{
-		sh 'echo test'
+		sh 'echo test1'
 		sh 'free -m'
 		sh 'ansible --version'
 		sh 'ansible-playbook --version'
