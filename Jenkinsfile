@@ -15,6 +15,7 @@ pipeline{
 		}
 	    steps{
 		  echo "deploy to prod env"
+		  echo "this is release branch and need to test"
 	   }
 
 
